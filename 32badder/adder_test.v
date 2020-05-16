@@ -1,8 +1,8 @@
 module testerino();
-reg [3:0] in1,in2;
+reg [31:0] in1,in2;
 reg Cin;
 wire Cout;
-wire [3:0] out;
+wire [31:0] out;
 reg seed;
 adder A0 (in1,in2,Cin,Cout,out);
 initial

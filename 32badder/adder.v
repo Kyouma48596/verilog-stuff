@@ -3,7 +3,7 @@ input [n-1:0] in1, in2;
 input Cin;
 output Cout;
 output [n-1:0] out;
-parameter n = 4;
+parameter n = 32;
 wire carries[n:0];
 assign Cout = carries[n-1];
 assign carries[0] = Cin;
