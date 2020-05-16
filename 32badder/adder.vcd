@@ -1,0 +1,124 @@
+$date
+	Thu May 14 12:58:02 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testerino $end
+$var wire 4 ! out [3:0] $end
+$var wire 1 " Cout $end
+$var reg 1 # Cin $end
+$var reg 4 $ in1 [3:0] $end
+$var reg 4 % in2 [3:0] $end
+$scope module A0 $end
+$var wire 1 # Cin $end
+$var wire 1 " Cout $end
+$var wire 4 & in1 [3:0] $end
+$var wire 4 ' in2 [3:0] $end
+$var wire 4 ( out [3:0] $end
+$scope begin genblk1[0] $end
+$upscope $end
+$scope begin genblk1[1] $end
+$upscope $end
+$scope begin genblk1[2] $end
+$upscope $end
+$scope begin genblk1[3] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+bx %
+bx $
+x#
+x"
+bx !
+$end
+#5
+0"
+b110 !
+b110 (
+1#
+b1 %
+b1 '
+b100 $
+b100 &
+#10
+b1 !
+b1 (
+1"
+b1101 %
+b1101 '
+b11 $
+b11 &
+#15
+b1000 !
+b1000 (
+1"
+b10 %
+b10 '
+b101 $
+b101 &
+#20
+b100 !
+b100 (
+1"
+b110 %
+b110 '
+b1101 $
+b1101 &
+#25
+1"
+b1010 !
+b1010 (
+b1100 %
+b1100 '
+#30
+b1011 !
+b1011 (
+0#
+b101 %
+b101 '
+b110 $
+b110 &
+#35
+1"
+b1100 !
+b1100 (
+b111 %
+b111 '
+b101 $
+b101 &
+#40
+b1 !
+b1 (
+1"
+b10 %
+b10 '
+b1111 $
+b1111 &
+#45
+b1101 !
+b1101 (
+0"
+b101 %
+b101 '
+b1000 $
+b1000 &
+#50
+1"
+b1011 !
+b1011 (
+1#
+b1101 %
+b1101 '
+b1101 $
+b1101 &
+#105

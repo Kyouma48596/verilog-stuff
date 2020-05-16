@@ -1,0 +1,231 @@
+$date
+	Thu May 07 16:58:50 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux_test $end
+$var wire 1 ! out $end
+$var reg 3 " ctrl [2:0] $end
+$var reg 8 # data [7:0] $end
+$scope module M0 $end
+$var wire 3 $ ctrl [2:0] $end
+$var wire 8 % data [7:0] $end
+$var wire 1 ! out $end
+$var wire 2 & t [0:1] $end
+$var wire 4 ' s [0:3] $end
+$scope module M0 $end
+$var wire 1 ( ctrl $end
+$var wire 2 ) data [1:0] $end
+$var wire 1 * out $end
+$upscope $end
+$scope module M2 $end
+$var wire 1 + ctrl $end
+$var wire 2 , data [1:0] $end
+$var wire 1 - out $end
+$upscope $end
+$scope module M3 $end
+$var wire 1 . ctrl $end
+$var wire 2 / data [1:0] $end
+$var wire 1 0 out $end
+$upscope $end
+$scope module M4 $end
+$var wire 1 1 ctrl $end
+$var wire 2 2 data [1:0] $end
+$var wire 1 3 out $end
+$upscope $end
+$scope module M5 $end
+$var wire 1 4 ctrl $end
+$var wire 2 5 data [1:0] $end
+$var wire 1 6 out $end
+$upscope $end
+$scope module M6 $end
+$var wire 1 7 ctrl $end
+$var wire 2 8 data [1:0] $end
+$var wire 1 9 out $end
+$upscope $end
+$scope module M7 $end
+$var wire 1 : ctrl $end
+$var wire 2 ; data [1:0] $end
+$var wire 1 ! out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx ;
+x:
+x9
+bx 8
+x7
+x6
+bx 5
+x4
+x3
+b1 2
+x1
+x0
+b11 /
+x.
+x-
+b1 ,
+x+
+x*
+b11 )
+x(
+bx '
+bx &
+b11011101 %
+bx $
+b11011101 #
+bx "
+x!
+$end
+#5
+1!
+16
+b11 &
+b11 ;
+19
+b11 5
+b11 8
+1*
+1-
+10
+b1111 '
+13
+0(
+0+
+0.
+01
+04
+07
+0:
+b0 "
+b0 $
+#10
+0!
+06
+b0 &
+b0 ;
+09
+b10 5
+b10 8
+0-
+b1010 '
+03
+1(
+1+
+1.
+11
+b1 "
+b1 $
+#15
+1!
+b11 5
+1-
+b11 8
+13
+1*
+b1111 '
+10
+16
+b11 &
+b11 ;
+19
+0(
+0+
+0.
+01
+14
+17
+b10 "
+b10 $
+#20
+b10 5
+b10 8
+0-
+b1010 '
+03
+1(
+1+
+1.
+11
+b11 "
+b11 $
+#25
+1!
+b11 5
+1-
+b11 8
+13
+1*
+b1111 '
+10
+16
+b11 &
+b11 ;
+19
+0(
+0+
+0.
+01
+04
+07
+1:
+b100 "
+b100 $
+#30
+0!
+06
+b0 &
+b0 ;
+09
+b10 5
+b10 8
+0-
+b1010 '
+03
+1(
+1+
+1.
+11
+b101 "
+b101 $
+#35
+1!
+b11 5
+1-
+b11 8
+13
+1*
+b1111 '
+10
+16
+b11 &
+b11 ;
+19
+0(
+0+
+0.
+01
+14
+17
+b110 "
+b110 $
+#40
+b10 5
+b10 8
+0-
+b1010 '
+03
+1(
+1+
+1.
+11
+b111 "
+b111 $
