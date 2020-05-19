@@ -1,0 +1,323 @@
+$date
+	Mon May 18 15:36:52 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 1 ! start $end
+$var wire 1 " sel_in $end
+$var wire 1 # sel2 $end
+$var wire 1 $ sel1 $end
+$var wire 1 % loadB $end
+$var wire 1 & loadA $end
+$var wire 1 ' done $end
+$var wire 1 ( L $end
+$var wire 1 ) G $end
+$var wire 1 * E $end
+$var reg 1 + clk $end
+$var reg 16 , data_in [15:0] $end
+$scope module CP $end
+$var wire 1 + clk $end
+$var wire 1 ! start $end
+$var wire 1 ( L $end
+$var wire 1 ) G $end
+$var wire 1 * E $end
+$var reg 1 ' done $end
+$var reg 1 & loadA $end
+$var reg 1 % loadB $end
+$var reg 3 - next_state [2:0] $end
+$var reg 3 . present_state [2:0] $end
+$var reg 1 $ sel1 $end
+$var reg 1 # sel2 $end
+$var reg 1 " sel_in $end
+$upscope $end
+$scope module DP $end
+$var wire 1 + clk $end
+$var wire 16 / data_in [15:0] $end
+$var wire 1 & loadA $end
+$var wire 1 % loadB $end
+$var wire 1 $ sel1 $end
+$var wire 1 # sel2 $end
+$var wire 1 " sel_in $end
+$var wire 16 0 wbus [15:0] $end
+$var wire 16 1 Subout [15:0] $end
+$var wire 16 2 SubB [15:0] $end
+$var wire 16 3 SubA [15:0] $end
+$var wire 1 ( L $end
+$var wire 1 ) G $end
+$var wire 1 * E $end
+$var wire 16 4 Bout [15:0] $end
+$var wire 16 5 Aout [15:0] $end
+$scope module COMP $end
+$var wire 16 6 in2 [15:0] $end
+$var wire 16 7 in1 [15:0] $end
+$var wire 1 ( L $end
+$var wire 1 ) G $end
+$var wire 1 * E $end
+$upscope $end
+$scope module MUXL $end
+$var wire 1 $ ctrl $end
+$var wire 16 8 out [15:0] $end
+$var wire 16 9 in2 [15:0] $end
+$var wire 16 : in1 [15:0] $end
+$upscope $end
+$scope module MUXR $end
+$var wire 1 # ctrl $end
+$var wire 16 ; out [15:0] $end
+$var wire 16 < in2 [15:0] $end
+$var wire 16 = in1 [15:0] $end
+$upscope $end
+$scope module MUX_in $end
+$var wire 1 " ctrl $end
+$var wire 16 > in2 [15:0] $end
+$var wire 16 ? out [15:0] $end
+$var wire 16 @ in1 [15:0] $end
+$upscope $end
+$scope module PIPOA $end
+$var wire 1 + clk $end
+$var wire 16 A in [15:0] $end
+$var wire 1 & load $end
+$var reg 16 B out [15:0] $end
+$upscope $end
+$scope module PIPOB $end
+$var wire 1 + clk $end
+$var wire 16 C in [15:0] $end
+$var wire 1 % load $end
+$var reg 16 D out [15:0] $end
+$upscope $end
+$scope module SUB $end
+$var wire 16 E in1 [15:0] $end
+$var wire 16 F in2 [15:0] $end
+$var reg 16 G out [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx G
+bx F
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+b0 .
+bx -
+bx ,
+0+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+1!
+$end
+#1
+b1 -
+0%
+1&
+1"
+0'
+#2
+b110 0
+b110 ?
+b110 A
+b110 C
+b110 ,
+b110 /
+b110 >
+#5
+b1 .
+b110 5
+b110 7
+b110 :
+b110 =
+b110 B
+1+
+#6
+b10 -
+1%
+0&
+#10
+0+
+#12
+b100 0
+b100 ?
+b100 A
+b100 C
+b100 ,
+b100 /
+b100 >
+#15
+0(
+1)
+b1x0 2
+b1x0 ;
+b1x0 F
+b1x0 3
+b1x0 8
+b1x0 E
+0*
+b100 4
+b100 6
+b100 9
+b100 <
+b100 D
+b10 .
+1+
+#16
+b10 1
+b10 @
+b10 G
+b100 2
+b100 ;
+b100 F
+b110 3
+b110 8
+b110 E
+b10 0
+b10 ?
+b10 A
+b10 C
+1#
+0$
+0"
+#17
+b11 -
+0%
+1&
+#20
+0+
+#25
+b1111111111111110 0
+b1111111111111110 ?
+b1111111111111110 A
+b1111111111111110 C
+b1111111111111110 1
+b1111111111111110 @
+b1111111111111110 G
+1(
+0)
+b10 3
+b10 8
+b10 E
+b11 .
+b10 5
+b10 7
+b10 :
+b10 =
+b10 B
+1+
+#26
+b10 0
+b10 ?
+b10 A
+b10 C
+b10 1
+b10 @
+b10 G
+b10 2
+b10 ;
+b10 F
+b100 3
+b100 8
+b100 E
+0#
+1$
+#27
+b100 -
+1%
+0&
+#30
+0+
+#35
+b0 0
+b0 ?
+b0 A
+b0 C
+b0 1
+b0 @
+b0 G
+0(
+b10 3
+b10 8
+b10 E
+1*
+b10 4
+b10 6
+b10 9
+b10 <
+b10 D
+b100 .
+1+
+#36
+b101 -
+0$
+#40
+0+
+#45
+1)
+0%
+1'
+b101 .
+0*
+b0 4
+b0 6
+b0 9
+b0 <
+b0 D
+1+
+#50
+0+
+#55
+1+
+#60
+0+
+#65
+1+
+#70
+0+
+#75
+1+
+#80
+0+
+#85
+1+
+#90
+0+
+#95
+1+
+#100
+0+
+#105
+1+
+#110
+0+
+#112
