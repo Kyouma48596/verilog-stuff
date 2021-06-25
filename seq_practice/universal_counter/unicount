@@ -1,0 +1,171 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000f3b390 .scope module, "uni_counter_test" "uni_counter_test" 2 1;
+ .timescale 0 0;
+P_0000000000f45df0 .param/l "COUNT_DOWN" 1 2 7, C4<01>;
+P_0000000000f45e28 .param/l "COUNT_UP" 1 2 7, C4<00>;
+P_0000000000f45e60 .param/l "LOAD" 1 2 7, C4<11>;
+P_0000000000f45e98 .param/l "PAUSE" 1 2 7, C4<10>;
+v0000000000f9f2c0_0 .var "clk", 0 0;
+v0000000000f9dba0_0 .net "count", 7 0, L_0000000000f3dcb0;  1 drivers
+v0000000000f9efa0_0 .var "ctrl", 1 0;
+v0000000000f9de20_0 .var "data_in", 7 0;
+v0000000000f9da60_0 .var "reset", 0 0;
+v0000000000f9f180_0 .var "syn_clr", 0 0;
+E_00000000010e8390 .event negedge, v0000000000f35e80_0;
+S_0000000000f12bc0 .scope module, "uut" "uni_counter" 2 10, 3 3 0, S_0000000000f3b390;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "syn_clr";
+    .port_info 3 /INPUT 2 "ctrl";
+    .port_info 4 /INPUT 8 "data_in";
+    .port_info 5 /OUTPUT 8 "count";
+P_0000000000f340b0 .param/l "COUNT_DOWN" 1 3 12, C4<01>;
+P_0000000000f340e8 .param/l "COUNT_UP" 1 3 12, C4<00>;
+P_0000000000f34120 .param/l "LOAD" 1 3 12, C4<11>;
+P_0000000000f34158 .param/l "N" 0 3 4, +C4<00000000000000000000000000001000>;
+P_0000000000f34190 .param/l "PAUSE" 1 3 12, C4<10>;
+L_0000000000f3dcb0 .functor BUFZ 8, v0000000000f9f4a0_0, C4<00000000>, C4<00000000>, C4<00000000>;
+L_0000000000f9f848 .functor BUFT 1, C4<00>, C4<0>, C4<0>, C4<0>;
+v0000000000f366a0_0 .net/2u *"_s0", 1 0, L_0000000000f9f848;  1 drivers
+v0000000000f36ba0_0 .net *"_s10", 0 0, L_0000000000f9dd80;  1 drivers
+L_0000000000f9f920 .functor BUFT 1, C4<00000001>, C4<0>, C4<0>, C4<0>;
+v0000000000f36c40_0 .net/2u *"_s12", 7 0, L_0000000000f9f920;  1 drivers
+v0000000000f35de0_0 .net *"_s14", 7 0, L_0000000000f9f400;  1 drivers
+L_0000000000f9f968 .functor BUFT 1, C4<11>, C4<0>, C4<0>, C4<0>;
+v0000000000f36100_0 .net/2u *"_s16", 1 0, L_0000000000f9f968;  1 drivers
+v0000000000f36880_0 .net *"_s18", 0 0, L_0000000000f9f540;  1 drivers
+v0000000000f36420_0 .net *"_s2", 0 0, L_0000000000f9f360;  1 drivers
+L_0000000000f9f9b0 .functor BUFT 1, C4<10>, C4<0>, C4<0>, C4<0>;
+v0000000000f36600_0 .net/2u *"_s20", 1 0, L_0000000000f9f9b0;  1 drivers
+v0000000000f36920_0 .net *"_s22", 0 0, L_0000000000f9f5e0;  1 drivers
+v0000000000f361a0_0 .net *"_s24", 7 0, L_0000000000f9e780;  1 drivers
+v0000000000f35f20_0 .net *"_s26", 7 0, L_0000000000f9e500;  1 drivers
+v0000000000f36240_0 .net *"_s28", 7 0, L_0000000000f9eaa0;  1 drivers
+L_0000000000f9f890 .functor BUFT 1, C4<00000001>, C4<0>, C4<0>, C4<0>;
+v0000000000f36b00_0 .net/2u *"_s4", 7 0, L_0000000000f9f890;  1 drivers
+v0000000000f364c0_0 .net *"_s6", 7 0, L_0000000000f9e6e0;  1 drivers
+L_0000000000f9f8d8 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0000000000f36a60_0 .net/2u *"_s8", 1 0, L_0000000000f9f8d8;  1 drivers
+v0000000000f35e80_0 .net "clk", 0 0, v0000000000f9f2c0_0;  1 drivers
+v0000000000f36560_0 .net "count", 7 0, L_0000000000f3dcb0;  alias, 1 drivers
+v0000000000f36740_0 .net "ctrl", 1 0, v0000000000f9efa0_0;  1 drivers
+v0000000000f9e460_0 .net "data_in", 7 0, v0000000000f9de20_0;  1 drivers
+v0000000000f9f4a0_0 .var "r_contents", 7 0;
+v0000000000f9ed20_0 .net "r_next", 7 0, L_0000000000f9f680;  1 drivers
+v0000000000f9f0e0_0 .net "reset", 0 0, v0000000000f9da60_0;  1 drivers
+v0000000000f9f220_0 .net "syn_clr", 0 0, v0000000000f9f180_0;  1 drivers
+E_00000000010e8410 .event posedge, v0000000000f9f0e0_0, v0000000000f35e80_0;
+L_0000000000f9f360 .cmp/eq 2, v0000000000f9efa0_0, L_0000000000f9f848;
+L_0000000000f9e6e0 .arith/sum 8, v0000000000f9f4a0_0, L_0000000000f9f890;
+L_0000000000f9dd80 .cmp/eq 2, v0000000000f9efa0_0, L_0000000000f9f8d8;
+L_0000000000f9f400 .arith/sub 8, v0000000000f9f4a0_0, L_0000000000f9f920;
+L_0000000000f9f540 .cmp/eq 2, v0000000000f9efa0_0, L_0000000000f9f968;
+L_0000000000f9f5e0 .cmp/eq 2, v0000000000f9efa0_0, L_0000000000f9f9b0;
+L_0000000000f9e780 .functor MUXZ 8, v0000000000f9f4a0_0, v0000000000f9f4a0_0, L_0000000000f9f5e0, C4<>;
+L_0000000000f9e500 .functor MUXZ 8, L_0000000000f9e780, v0000000000f9de20_0, L_0000000000f9f540, C4<>;
+L_0000000000f9eaa0 .functor MUXZ 8, L_0000000000f9e500, L_0000000000f9f400, L_0000000000f9dd80, C4<>;
+L_0000000000f9f680 .functor MUXZ 8, L_0000000000f9eaa0, L_0000000000f9e6e0, L_0000000000f9f360, C4<>;
+    .scope S_0000000000f12bc0;
+T_0 ;
+    %wait E_00000000010e8410;
+    %load/vec4 v0000000000f9f0e0_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0000000000f9f4a0_0, 0, 8;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0000000000f9f220_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %pushi/vec4 0, 0, 8;
+    %store/vec4 v0000000000f9f4a0_0, 0, 8;
+    %jmp T_0.3;
+T_0.2 ;
+    %load/vec4 v0000000000f9ed20_0;
+    %store/vec4 v0000000000f9f4a0_0, 0, 8;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0000000000f3b390;
+T_1 ;
+    %vpi_call 2 15 "$dumpfile", "unicount.vcd" {0 0 0};
+    %vpi_call 2 16 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000000000f3b390 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000000f9f2c0_0, 0, 1;
+    %end;
+    .thread T_1;
+    .scope S_0000000000f3b390;
+T_2 ;
+    %delay 5, 0;
+    %load/vec4 v0000000000f9f2c0_0;
+    %inv;
+    %store/vec4 v0000000000f9f2c0_0, 0, 1;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0000000000f3b390;
+T_3 ;
+    %wait E_00000000010e8390;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000000f9da60_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000000f9da60_0, 0, 1;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000000000f9f180_0, 0, 1;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000000000f9f180_0, 0, 1;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %pushi/vec4 170, 0, 8;
+    %store/vec4 v0000000000f9de20_0, 0, 8;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %wait E_00000000010e8390;
+    %delay 1, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0000000000f9efa0_0, 0, 2;
+    %delay 15, 0;
+    %vpi_call 2 48 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "uni_counter_test.v";
+    "uni_counter.v";

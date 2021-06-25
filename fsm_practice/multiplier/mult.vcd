@@ -1,0 +1,405 @@
+$date
+	Sun Mar 21 21:38:51 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multiplier_test $end
+$var wire 1 ! ldP $end
+$var wire 1 " ldB $end
+$var wire 1 # ldA $end
+$var wire 1 $ eq $end
+$var wire 1 % done $end
+$var wire 1 & decB $end
+$var wire 1 ' clrP $end
+$var reg 1 ( clk $end
+$var reg 8 ) data_in [7:0] $end
+$var reg 1 * reset $end
+$var reg 1 + start $end
+$scope module CON $end
+$var wire 1 ( clk $end
+$var wire 8 , data_in [7:0] $end
+$var wire 1 * reset $end
+$var wire 1 + start $end
+$var wire 8 - r_next [7:0] $end
+$var wire 1 $ eq $end
+$var reg 1 ' clrP $end
+$var reg 1 & decB $end
+$var reg 1 % done $end
+$var reg 1 # ldA $end
+$var reg 1 " ldB $end
+$var reg 1 ! ldP $end
+$var reg 8 . r_state [7:0] $end
+$upscope $end
+$scope module DP $end
+$var wire 8 / bus [7:0] $end
+$var wire 1 ( clk $end
+$var wire 1 ' clrP $end
+$var wire 8 0 data_in [7:0] $end
+$var wire 1 & decB $end
+$var wire 1 1 gnd $end
+$var wire 1 # ldA $end
+$var wire 1 " ldB $end
+$var wire 1 ! ldP $end
+$var wire 1 $ eq $end
+$var wire 8 2 Z_out [7:0] $end
+$var wire 8 3 P_out [7:0] $end
+$var wire 8 4 B_out [7:0] $end
+$var wire 8 5 A_out [7:0] $end
+$scope module A $end
+$var wire 1 ( clk $end
+$var wire 1 1 clr $end
+$var wire 8 6 data_in [7:0] $end
+$var wire 1 # load $end
+$var wire 8 7 out [7:0] $end
+$var wire 1 1 reset $end
+$var wire 8 8 r_next [7:0] $end
+$var reg 8 9 r_contents [7:0] $end
+$upscope $end
+$scope module B $end
+$var wire 1 ( clk $end
+$var wire 8 : count [7:0] $end
+$var wire 8 ; data_in [7:0] $end
+$var wire 1 & dec $end
+$var wire 1 " load $end
+$var wire 1 1 reset $end
+$var wire 8 < r_next [7:0] $end
+$var reg 8 = r_contents [7:0] $end
+$upscope $end
+$scope module C $end
+$var wire 8 > A [7:0] $end
+$var wire 1 $ eq $end
+$upscope $end
+$scope module P $end
+$var wire 1 ( clk $end
+$var wire 1 1 clr $end
+$var wire 1 ! load $end
+$var wire 8 ? out [7:0] $end
+$var wire 1 ' reset $end
+$var wire 8 @ r_next [7:0] $end
+$var wire 8 A data_in [7:0] $end
+$var reg 8 B r_contents [7:0] $end
+$upscope $end
+$scope module Z $end
+$var wire 8 C A [7:0] $end
+$var wire 8 D B [7:0] $end
+$var wire 8 E sum [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx E
+bx D
+bx C
+bx B
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+01
+bx 0
+bx /
+b0 .
+b1 -
+bx ,
+1+
+1*
+bx )
+0(
+0'
+0&
+0%
+x$
+0#
+0"
+0!
+$end
+#5
+1(
+#6
+0*
+#10
+0(
+#15
+b10 -
+b1 .
+1(
+#16
+b0 @
+b0 3
+b0 ?
+b0 D
+b0 B
+1'
+1#
+#20
+b1000 8
+b1000 /
+b1000 6
+b1000 ;
+b1000 )
+b1000 ,
+b1000 0
+0(
+#25
+b11 -
+0'
+0#
+b10 .
+b1000 2
+b1000 A
+b1000 E
+b1000 5
+b1000 7
+b1000 C
+b1000 9
+1(
+#26
+b1000 <
+1"
+#30
+b1001 <
+b1001 /
+b1001 6
+b1001 ;
+b1001 )
+b1001 ,
+b1001 0
+0(
+#35
+0$
+b1001 4
+b1001 :
+b1001 >
+b1001 =
+b11 -
+b1001 <
+0"
+b11 .
+1(
+#36
+b1000 <
+b1000 @
+1&
+1!
+#40
+0(
+#45
+b111 <
+b1000 4
+b1000 :
+b1000 >
+b1000 =
+b10000 @
+b10000 2
+b10000 A
+b10000 E
+b1000 3
+b1000 ?
+b1000 D
+b1000 B
+1(
+#50
+0(
+#55
+b110 <
+b111 4
+b111 :
+b111 >
+b111 =
+b11000 @
+b11000 2
+b11000 A
+b11000 E
+b10000 3
+b10000 ?
+b10000 D
+b10000 B
+1(
+#60
+0(
+#65
+b101 <
+b110 4
+b110 :
+b110 >
+b110 =
+b100000 @
+b100000 2
+b100000 A
+b100000 E
+b11000 3
+b11000 ?
+b11000 D
+b11000 B
+1(
+#70
+0(
+#75
+b100 <
+b101 4
+b101 :
+b101 >
+b101 =
+b101000 @
+b101000 2
+b101000 A
+b101000 E
+b100000 3
+b100000 ?
+b100000 D
+b100000 B
+1(
+#80
+0(
+#85
+b11 <
+b100 4
+b100 :
+b100 >
+b100 =
+b110000 @
+b110000 2
+b110000 A
+b110000 E
+b101000 3
+b101000 ?
+b101000 D
+b101000 B
+1(
+#90
+0(
+#95
+b10 <
+b11 4
+b11 :
+b11 >
+b11 =
+b111000 @
+b111000 2
+b111000 A
+b111000 E
+b110000 3
+b110000 ?
+b110000 D
+b110000 B
+1(
+#100
+0(
+#105
+b1 <
+b10 4
+b10 :
+b10 >
+b10 =
+b1000000 @
+b1000000 2
+b1000000 A
+b1000000 E
+b111000 3
+b111000 ?
+b111000 D
+b111000 B
+1(
+#110
+0(
+#115
+b0 <
+b1 4
+b1 :
+b1 >
+b1 =
+b1001000 @
+b1001000 2
+b1001000 A
+b1001000 E
+b1000000 3
+b1000000 ?
+b1000000 D
+b1000000 B
+1(
+#120
+0(
+#125
+b100 -
+b11111111 <
+1$
+b0 4
+b0 :
+b0 >
+b0 =
+b1010000 @
+b1010000 2
+b1010000 A
+b1010000 E
+b1001000 3
+b1001000 ?
+b1001000 D
+b1001000 B
+1(
+#130
+0(
+#135
+0$
+b11111111 4
+b11111111 :
+b11111111 >
+b11111111 =
+b11111111 <
+0&
+0!
+b1010000 @
+b100 .
+b1011000 2
+b1011000 A
+b1011000 E
+b1010000 3
+b1010000 ?
+b1010000 D
+b1010000 B
+1(
+#136
+1%
+#140
+0(
+#145
+1(
+#150
+0(
+#155
+1(
+#160
+0(
+#165
+1(
+#170
+0(
+#175
+1(
+#180
+0(
+#185
+1(
+#190
+0(
+#195
+1(
+#200
+0(

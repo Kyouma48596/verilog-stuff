@@ -1,0 +1,142 @@
+$date
+	Mon Jan 04 17:16:14 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module uni_counter_test $end
+$var wire 8 ! count [7:0] $end
+$var reg 1 " clk $end
+$var reg 2 # ctrl [1:0] $end
+$var reg 8 $ data_in [7:0] $end
+$var reg 1 % reset $end
+$var reg 1 & syn_clr $end
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 8 ' count [7:0] $end
+$var wire 2 ( ctrl [1:0] $end
+$var wire 8 ) data_in [7:0] $end
+$var wire 1 % reset $end
+$var wire 1 & syn_clr $end
+$var wire 8 * r_next [7:0] $end
+$var reg 8 + r_contents [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx +
+bx *
+bx )
+bx (
+bx '
+x&
+x%
+bx $
+bx #
+0"
+bx !
+$end
+#5
+1"
+#10
+b0 !
+b0 '
+b0 +
+1%
+0"
+#11
+b1 *
+b0 #
+b0 (
+0%
+#15
+b10 *
+b1 !
+b1 '
+b1 +
+1"
+#20
+0"
+#25
+b11 *
+b10 !
+b10 '
+b10 +
+1"
+#30
+0"
+#35
+b100 *
+b11 !
+b11 '
+b11 +
+1"
+#40
+0"
+#41
+1&
+#45
+b1 *
+b0 !
+b0 '
+b0 +
+1"
+#50
+0"
+#51
+b10101010 *
+b10101010 $
+b10101010 )
+b11 #
+b11 (
+0&
+#55
+b10101010 !
+b10101010 '
+b10101010 +
+1"
+#60
+0"
+#61
+b10101001 *
+b1 #
+b1 (
+#65
+b10101000 *
+b10101001 !
+b10101001 '
+b10101001 +
+1"
+#70
+0"
+#75
+b10100111 *
+b10101000 !
+b10101000 '
+b10101000 +
+1"
+#80
+0"
+#85
+b10100110 *
+b10100111 !
+b10100111 '
+b10100111 +
+1"
+#90
+0"
+#91
+b10100111 *
+b10 #
+b10 (
+#95
+1"
+#100
+0"
+#105
+1"
+#106
